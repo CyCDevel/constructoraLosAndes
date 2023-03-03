@@ -1,0 +1,99 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+										{% block headerActive %}
+										<li><a href="{% url 'index' %}">Inicio</a></li>
+										<li class="active"><a href="{% url 'ventajas' %}">Ventajas</a></li>
+										<li><a href="{% url 'trabajos' %}">Nuestros <br> Trabajos</a></li>
+										<li><a href="{% url 'servicios' %}">Servicios</a></li>
+										<li><a href="{% url 'presupuesto' %}">Presupuesto</a></li>
+										<li><a href="https://propiedadeslosandes.cl/web/">Gestión <br> Inmobiliaria</a></li>
+										{% endblock headerActive %}
+			{% block content %}
+			<!-- 
+			=============================================
+				CallOut Banner 
+			============================================== 
+			-->
+			<div class="callout-banner no-bg">
+				<div class="container clearfix">
+					<h3 class="title">Nuestra ventaja es nuestra garantía</h3>
+					<p>
+						Nosotros te entregamos una garantía de 30 días, en la que cualquier problema que pueda ocurrir por nuestro trabajo, puedes contar con nosotros para repararlo
+					</p>
+				</div>
+			</div> <!-- /.callout-banner -->
+			
+			
+			
+			<!-- 
+			=============================================
+				About Company Stye Two
+			============================================== 
+			-->
+			<div class="about-compnay-two no-bg section-spacing">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-12 text order-lg-last">
+								<div class="theme-title-one">
+									<h2>Quienes Somos</h2>
+								</div> <!-- /.theme-title-one -->
+								<p>
+									Somos una empresa con asesoría inmobiliaria que te ayuda a encontrar viviendas con una buena relación en precio y calidad. 
+									<br> También nos especializamos en construcción para crear espacios y ambientes de acuerdo a tus requerimientos y necesidades.
+								</p>
+							</div> <!-- /.col- -->
+							<div class="col-lg-6 col-12 order-lg-first">
+								<img src="{% static 'core/images/LogoCyC/logo_nico-1.png' %}" alt="C&C Ingeniería y construcción spa" class="left-img">
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.about-compnay-two -->
+
+
+			<!--
+			=====================================================
+				Why We Best
+			=====================================================
+			-->
+			<div class="why-we-best" id="ventajas">
+				<div class="overlay">
+					<div class="container">
+						<div class="theme-title-one">
+							<h2>Nuestras ventajas</h2>
+							<p>Tenemos ventajas no solo en garantía, si no también en nuestros materiales</p>
+						</div> <!-- /.theme-title-one -->
+
+						<div class="wrapper row no-gutters">
+							<div class="col-lg-12 order-lg-first">
+								<ul class="best-list-item">
+									<li class="col-lg-6 col-sm-12 offset-lg-3">
+										<img src="{% static 'core/images/icon/ladrillo.png' %}" class="iconNew">
+										<h5><a href="#ventajas">Utilizamos Metalcon</a></h5>
+										<p>Este material permite una rápida construcción, a menor costo y es resistente a los sismos y al fuego</p>
+									</li>
+									<li class="col-lg-6 col-sm-12 offset-lg-3">
+										<img src="{% static 'core/images/icon/herramientas.png' %}" class="iconNew">
+										<h5><a href="#ventajas">Utilizamos maquinaría de alta calidad</a></h5>
+										<p>Tenemos diversas herramientas que permiten que se contruya con mayor calidad como un nivelador 360</p>
+									</li>
+									<li class="col-lg-6 col-sm-12 offset-lg-3">
+										<img src="{% static 'core/images/icon/customer-service.svg' %}" class="icon">
+										<h5><a href="#ventajas">Contamos con personal capacitado</a></h5>
+										<p>Tenemos asesoría de arquitectos e ingenieros para poder brindar la mayor calidad al construir</p>
+									</li>
+								</ul>
+							</div> <!-- /.col- -->
+						</div> <!-- /.wrapper -->
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.why-we-best -->
+			{% endblock content %}
+
+			{% block iconosCopyright %}
+			<a href="https://www.flaticon.es/iconos-gratis/reparar" title="reparar iconos" style="color: white;">Reparar iconos creados por Freepik - Flaticon</a>
+			<br>
+			<a href="https://www.flaticon.es/iconos-gratis/ladrillo" title="ladrillo iconos" style="color: white">Ladrillo iconos creados por Pixel perfect - Flaticon</a>
+			{% endblock iconosCopyright %}
